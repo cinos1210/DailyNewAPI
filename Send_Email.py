@@ -10,6 +10,6 @@ def Send_email(message):
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(host, port, context=context) as server:
         server.login(email, passw)
-        server.sendmail(email, email, message)
+        server.sendmail(email, "ARTURO.CRUZ.1210@ibm.com", message)
 
 
